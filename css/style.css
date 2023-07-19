@@ -1,0 +1,49 @@
+/* ------- Global -------*/
+::-webkit-scrollbar {
+   width: 10px;
+}
+::-webkit-scrollbar-track {
+   box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb {
+   background-color: #aaa;
+   border-radius: 50px;
+}
+body {
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* ------- main -------*/
+.main-content .book-list {
+   height: 300px;
+   overflow-y: auto;
+}
+.main-content .book-list .item {
+   background-image: linear-gradient(#ddd, #fff);
+}
+.main-content .input-name::before {
+   content: '';
+   position: absolute;
+   background-image: url(../images/mark.png);
+   width: 16px;height: 16px;
+   left: 5px;
+   top: 50%;
+   transform: translateY(-50%);
+}
+.main-content .input-url::before {
+   content: '';
+   position: absolute;
+   background-image: url(../images/website.png);
+   width: 16px;height: 16px;
+   left: 5px;
+   top: 50%;
+   transform: translateY(-50%);
+}
+.main-content input[type="search"] {
+   background-image: url(../images/search.png);
+   background-repeat: no-repeat;
+   background-position: left 10px center;
+   padding-left: 30px;
+}
+.main-content .invalid-feedback {
+   margin-top: -15px;
+}

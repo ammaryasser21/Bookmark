@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Bookmark" />
+      <meta name="author" content="AHMED MENISY"/>
+      <title>Bookmark</title>
+      <link rel="stylesheet" href="./css/bootstrap.min.css" />
+      <link rel="stylesheet" href="./css/style.css" />
+   </head>
+   <body>
+      <main class="container py-4">
+         <header class="py-4 ps-3 border-bottom border-secondary">
+            <h1 class="h3 text-muted fw-bold">Bookmarker</h1>
+         </header>
+         <section class="main-content p-3">
+            <div
+               class="content bg-secondary bg-opacity-10 py-5 text-center vstack align-items-center"
+            >
+               <h2 class="mb-5 fw-bold">Bookmark your favorite sites</h2>
+               <label for="bookNameInput" class="fw-bold fs-5">Site Name <span class="text-danger">*</span></label>
+               <div class="input-name my-3 w-75 position-relative ">
+                  <input
+                     class=" form-control form-control-sm ps-4"
+                     type="text"
+                     placeholder="Bookmark Name
+                  "
+                     id="bookNameInput"
+                  />
+               </div>
+               <div id="feedName" class="invalid-feedback w-75 text-start">Please enter name A-Z or a-z or 0-9 or _</div>
+               
+               <label for="bookUrlInput" class="fw-bold fs-5">Site URL <span class="text-danger">*</span></label>
+               <div class="input-url my-3 w-75 position-relative ">
+               <input
+                  class="form-control form-control-sm  ps-4"
+                  type="url"
+                  placeholder="website URL
+
+               "
+                  id="bookUrlInput"
+               />
+               </div>
+               <div id="feedUrl" class="invalid-feedback w-75 text-start ">Enter Url  </div>
+               <button disabled id="btnAddItem" type="button" class="btn btn-primary ">Submit</button>
+               <button  id="btnUpdateItem" type="button" class="btn btn-warning d-none">Update</button>
+               <p class="alert alert-danger mt-2 p-2 small fw-semibold d-none"></p>
+            </div>
+            <input id="bookSearchInput" type="search" class="w-50 m-auto form-control form-control-sm my-4" placeholder="Search By Name ..">
+            <section class="book-list vstack gap-2" id="bookList">
+               
+            </section>
+         </section>
+         <footer class="py-4 ps-3 border-top border-secondary">
+            <h6 class="text-muted fw-bold">&copy; 2022 Bookmarker Inc.</h6>
+         </footer>
+      </main>
+      
+      <script src="./js/bootstrap.bundle.min.js"></script>
+      <script src="./js/main.js"></script>
+   </body>
+</html>
